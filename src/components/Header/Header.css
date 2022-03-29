@@ -1,0 +1,14 @@
+.navbar a{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.navbar{
+    background-color: blueviolet;
+    padding: 10px;
+    width: 100%;
+}

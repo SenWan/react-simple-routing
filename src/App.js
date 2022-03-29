@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
+import Header from './components/Header/Header';
 import Friends from './components/Home/Friends/Friends';
 import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
@@ -8,7 +9,7 @@ import NotFound from './components/NotFound/NotFound';
 function App() {
   return (
     <div className="App">
-      <h1>Welcome To My Routing Website</h1>
+      <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/friend' element={<Friends></Friends>}></Route>
