@@ -1,4 +1,5 @@
 import React from 'react';
+import './Friend.css'
 import { useNavigate } from 'react-router-dom';
 
 const Friend = (props) => {
@@ -9,7 +10,7 @@ const Friend = (props) => {
         navigate(path);
     }
     return (
-        <div>
+        <div className='friend'>
             <h2>Name: {name}</h2>
             <button onClick={showFriendDetails}>{username} id:{id}</button>
         </div>

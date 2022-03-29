@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
+import FriendDetails from './components/FriendDetails/FriendDetails';
 import Header from './components/Header/Header';
 import Friends from './components/Home/Friends/Friends';
 import Home from './components/Home/Home';
@@ -13,6 +14,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/friend' element={<Friends></Friends>}></Route>
+        {/* colon dewa mane holo dynamic ja friend e por vul hole o dekhabe */}
+        <Route path='/friend/:details' element={<FriendDetails></FriendDetails>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
