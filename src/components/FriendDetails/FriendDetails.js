@@ -14,7 +14,7 @@ const FriendDetails = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setFriend(data));
-    }, []);
+    }, [details]);
     return (
         <div className='friendDetails'>
             {/* friendDetails route theke dynamically pawar jnno. ekhane friendDetals button e click krle dynamically number gula dekhabe */}

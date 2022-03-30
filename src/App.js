@@ -6,6 +6,8 @@ import Header from './components/Header/Header';
 import Friends from './components/Home/Friends/Friends';
 import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
+import PostDetails from './components/PostDetails/PostDetails';
+import Posts from './components/Posts/Posts';
 
 function App() {
   return (
@@ -16,6 +18,9 @@ function App() {
         <Route path='/friend' element={<Friends></Friends>}></Route>
         {/* colon dewa mane holo dynamic ja friend e por vul hole o dekhabe */}
         <Route path='/friend/:details' element={<FriendDetails></FriendDetails>}></Route>
+        <Route path='/posts' element={<Posts></Posts>}>
+          <Route path=':postId' element={<PostDetails></PostDetails>}></Route>
+        </Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
